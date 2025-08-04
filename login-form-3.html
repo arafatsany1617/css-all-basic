@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form 3</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100dvw;
+            height: 100dvh;
+            background-image: url("images/profile.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .log-in-form{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 32px;
+            height: 450px;
+            width: 400px;
+            padding: 12px 16px;
+            position: relative;
+            z-index: 1;
+            border: 2px solid black;
+            border-radius: 24px;
+        }
+        .log-in-form::after{
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            background-color: rgba(17, 48, 95, 0.486);
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-radius: 24px;
+            backdrop-filter: blur(4px);
+            opacity: 0.4;
+        }
+        .log-in-form h1{
+            font-size: clamp(1rem 8vw 2.6rem);
+            color: white;
+        }
+        .from-input,
+        .chk-box-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            flex-direction: column;
+        }
+        .chk-box-container {
+            display: inline-flex;
+            flex-direction: row;
+        }
+        .chk-box-container label {
+            color: white;
+        }
+        .from-input input{
+            width: clamp(200px, 30vw, 300px);
+            height: clamp(20px, 30vh, 40px);
+            padding: 12px 16px;
+            border: none;
+            border-radius: 12px;
+        }
+        button{
+            padding: 12px 16px;
+            font-size: clamp(1.2rem, 1.2vw, 2rem);
+            border: none;
+            border-radius: 100px;
+            color: white;
+            background-color: palevioletred;
+            width: clamp(75px, 20vw, 150px);
+            height: auto;
+        }
+        button:hover{
+            background-color: pink;
+            transition: all 0.3s cubic-bezier(0.86, -0.64, 0.5, 2.22);
+            cursor: pointer;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="log-in-form">
+            <h1>Welcome</h1>
+            <div class="form-input">
+                <input type="text"  placeholder="Name">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="chk-box-container">
+                <label for="checkbox">Remember Me</label>
+                <input type="checkbox">
+            </div>
+            <button>Login</button>
+        </div>
+    </div>
+</body>
+</html>

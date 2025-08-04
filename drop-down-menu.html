@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drop Down Menu</title>
+
+    <style>
+        .navbar{
+            background-color: #40868b;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        .navbar a{
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .dp-container{
+            display: inline;
+            position: relative;
+        }
+        .dp-content{
+            position: absolute;
+            top: 30px;
+            right: 0px;
+            background-color: #40868b;
+            text-align: left;
+            min-width: 100px;
+            display: none;
+        }
+        .dp-content a{
+            display: block;
+        }
+
+        .dp-content a:hover{
+
+            background-color: gray;
+        }
+
+        .dp-container:hover .dp-content{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+   <div class="navbar">
+
+    <a href="#">home</a>
+    <a href="#">about</a>
+    
+
+    <div class="dp-container">
+        <a href="#">contact us</a>
+        
+        <div class="dp-content">
+            <a href="#">facebook</a>
+            <a href="#">messenger</a>
+        </div>
+    </div>
+
+
+    <a href="#">TikTok</a>
+
+   </div>
+</body>
+</html>
