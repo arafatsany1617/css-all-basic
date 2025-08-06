@@ -3,38 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Try to a Drop Down Menu</title>
-
+    <title>Drop Down menu</title>
     <style>
         .navbar{
-            background-color: rgb(54, 20, 20);
+            background-color: rgb(20, 18, 18);
+            padding: 1% 7%;
             text-align: center;
-            padding: 10px;
         }
-        .navbar a {
-            color: white;
-            font-size: 25px;
+        .navbar a{
             text-decoration: none;
+            color: white;
+            font-size: 22px;
+            padding: 15px;
             cursor: pointer;
         }
+        .dropdown-container{
+            display: inline;
+            position: relative;
+        }
+
+        .dropdown-content{
+            position: absolute;
+            top: 30px;
+            right: 0px;
+            background-color: rgb(0, 255, 255);
+            text-align: left;
+            min-width: 100px;
+            display: none;
+        }
+        .dropdown-content a{
+            display: block;
+            
+        }
+        .dropdown-content a:hover{
+            background-color: grey;
+            
+        }
+        .dropdown-container:hover .dropdown-content{
+            display: block;
+        }
+
     </style>
-</head> 
+</head>
 <body>
     <div class="navbar">
         <a href="#">home</a>
         <a href="#">about</a>
+        
 
-        <div class="dp-container">
-             <a href="#">contact</a>
+        <div class="dropdown-container">
+            <a href="#">contact us</a>
             
-             <div class="dp-content">
-                <a href="#">Gmail</a>
-                <a href="#">messenger</a>
+            <div class="dropdown-content">
                 <a href="#">facebook</a>
-                <a href="#">Whats'app</a>
-             </div>
+                <a href="#">email</a>
+            </div>
         </div>
 
+
+        <a href="#">Tutorial</a>
     </div>
 </body>
 </html>
