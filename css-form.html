@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Form</title>
+    <style>
+         input[type=text]{
+            width: 100%;
+            padding: 10px 20px;
+            font-size: 1rem;
+            margin: 20px 0;
+            box-sizing: border-box;
+            border-radius: 10px;
+            border: 3px solid salmon;
+
+
+         }
+
+
+         #search {
+        background-image: url(images/search-2.png);
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        background-size: 20px 20px; /* ছবির সাইজ */
+        padding-left: 40px; /* যেন টেক্সট ছবির পাশে থাকে */
+        width: 150px;
+        transition: width 0.3s ease-in-out;
+
+        }
+        #search:focus{
+            background-color: sienna;
+            width: 100%;
+        }
+
+        textarea{
+            resize: none;
+            width: 50%;
+            padding: 20px;
+            border: 3px solid gray;
+            border-radius: 10px;
+        }
+        input[type="button"], input[type="reset"]{
+            width: 100px;
+            border: none;
+            background-color: indianred;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+        select{
+            width: 50%;
+            padding: 20px;
+            border: none;
+            background-color: tomato;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+       
+        <input type="text" name="search" id="search" placeholder="search">
+
+        <br>
+        
+        <label for="fname">First name</label>
+        <input type="text" name="fname" id="fname">
+
+
+        <label for="fname">Last name</label>
+        <input type="text" name="lname" id="lname">
+    </form>
+
+    <form action="">
+
+        <select name="subject-name" id="subjects">
+            <option value="c">C program</option>
+            <option value="c++">C++ program</option>
+            <option value="java">Java program</option>
+        </select>
+
+
+        <textarea name="" id="" cols="30" rows="10">Write Your Comment Here</textarea>
+
+        <input type="button" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+</body>
+</html>

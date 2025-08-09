@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Table</title>
+
+    <style>
+
+        table{
+            border: 2px solid black;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th,td{
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th{
+            background-color: darkgreen;
+            color: white;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        tr:nth-child(even){
+            background-color: gray;
+        }
+        tr:nth-child(odd){
+            background-color: gold;
+        }
+
+        tr:hover{
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    
+
+    <table>
+        <caption>Student Details</caption>
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>GPA</th>
+            <th>Phone</th>
+            <th>Bio</th>
+        </tr>
+
+        <tr>
+            <td>101</td>
+            <td>Sany</td>
+            <td>3.75</td>
+            <td>01600510575</td>
+            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, porro voluptate! Id saepe sunt quas quam dolorem quod, cumque maiores!</td>
+        </tr>
+
+
+        <tr>
+            <td>102</td>
+            <td>Arafat</td>
+            <td>3.75</td>
+            <td>01600510575</td>
+            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, porro voluptate! Id saepe sunt quas quam dolorem quod, cumque maiores!</td>
+        </tr>
+
+
+        <tr>
+            <td>103</td>
+            <td>Yeasin</td>
+            <td>3.75</td>
+            <td>01600510575</td>
+            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, porro voluptate! Id saepe sunt quas quam dolorem quod, cumque maiores!</td>
+        </tr>
+
+
+        <tr>
+            <td>104</td>
+            <td>Afsanah</td>
+            <td>3.75</td>
+            <td>01600510575</td>
+            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, porro voluptate! Id saepe sunt quas quam dolorem quod, cumque maiores!</td>
+        </tr>
+
+
+         <tr>
+            <td>105</td>
+            <td>Sonia Ayman</td>
+            <td>3.75</td>
+            <td>01600510575</td>
+            <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident, porro voluptate! Id saepe sunt quas quam dolorem quod, cumque maiores!</td>
+        </tr>
+        
+    </table>
+
+
+</body>
+</html>
