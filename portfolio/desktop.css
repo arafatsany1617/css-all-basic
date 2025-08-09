@@ -20,6 +20,7 @@
     text-align: right;
   }
   .navbar-menu{
+    display: flex;
     flex-direction: row;
     justify-content: flex-end;
   }
@@ -59,7 +60,7 @@
 
 
   .profile .bottom-weather-icon{
-   
+    position: absolute;
     left: 140px;
     width: 120px;
     transition: width 2s, transform 2s;
@@ -105,3 +106,66 @@
 
 
   /* About me design ends here */
+
+
+
+
+
+
+
+  /* Professional-experience start here */
+
+
+
+.professional-experience{
+    padding: 1% 5%;
+}
+
+
+  /* Professional-experience ends here */
+
+
+
+
+
+
+
+/* achievement-contact start from here */
+
+.achievement{
+  padding-right: 50px;
+}
+.contact button{
+  width: 150px;
+}
+
+.contact-links{
+  position: relative;;
+}
+
+.media-btn{
+  position: absolute;
+  margin-top: 100px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50% -50%);
+}
+
+/* achievement-contact ends here */
+
+
+
+/* footer starts from here */
+
+.footer-menu{
+  margin-top: 12px;
+
+}
+.footer-menu a{
+  display: inline;
+  margin: 10px;
+}
+
+
+
+/* footer ends  here  */
