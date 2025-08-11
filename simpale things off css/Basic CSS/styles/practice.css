@@ -1,0 +1,40 @@
+.frist-h1{
+    color: aqua;
+    text-align: center;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.first-div{
+    color: aquamarine;
+    background-color: blueviolet;
+    width: 500px;
+    margin-left: 40px;
+    border-radius: 10px;
+    /* height: auto; */
+    /* padding-left: 50px; */
+
+}
+.second-h4{
+    color: red;
+    text-align: center;
+   font-family: 'Courier New', Courier, monospace;
+   /* display: block; */
+   width: auto;
+    
+}
+.first-img{
+    background-repeat: no-repeat;
+    width: 500px;
+    border: 10px;
+}
+.blogs{
+    background-color: brown;
+    border: 10px solid aqua;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
+    box-shadow: 10px 10px 10px blueviolet;
+    font-family: 'Courier New', Courier, monospace;
+}
