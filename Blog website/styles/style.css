@@ -26,6 +26,10 @@ body{
     box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
 }
 
+.text-justify{
+    text-align: justify;
+}
+
 /* reset code and common code ends here */
 
 
@@ -71,16 +75,84 @@ nav li:hover{
 }
 /* header ends here */
 
+/* banner section starts here */
+
+#blog-banner-section{
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+#blog-banner-section article{
+    flex-basis: 50%;
+    margin: 1rem;
+}
+
+.banner-heading{
+    display: inline-block;
+    padding: 1rem;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    background-color: black;
+    color: #fff;
+}
+
+.banner-description{
+    font-size: 1.8rem;   
+}
+
+
+#blog-banner-section aside{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+
+
+
+.banner-image{
+    width: 55rem;
+    height: 55rem;
+    border: 0.3rem solid;
+}
+
+/* banner section ends  */
+
+
+
+
+
+
 
 
 
 /* responsive starts here */
 
 @media (max-width: 992px) {
-    
+
+    #blog-banner-section{
+        flex-direction: column;
+
+    }
+
+    #blog-banner-section article{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 5rem;
+    }
+
 }
 
 @media (max-width: 768px) {
+    html{
+        font-size: 55.5%;
+    }
+    #blog-banner-section article{
+        width: 80%;
+    }
     
 }
 @media (max-width: 600px) {
@@ -99,6 +171,13 @@ nav li:hover{
         margin: 1rem 0;
     }
     
+}
+#blog-banner-section{
+    min-height: auto;
+}
+
+#blog-banner-section article{
+    width: 90%;
 }
 @media (max-width: 400px) {
     
