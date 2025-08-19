@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BEM </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 
+    BEM : Block, Element, Modifier
+    1.CSS Specificity problem
+    2.css class names clashes
+    3.A common rules needed
+
+
+
+    Block
+    1. meaningful container/parent
+    2. letters, digits, dashes for naming block
+    3. use dash for more then one word
+    
+    
+    Element
+    1. not meaningful like container but related to container
+    2. letters, digits, dashes, underscore  for naming element
+    3. use dash for more then one word
+    4. syntax: block__element
+    
+    
+    
+    
+    Modifier
+    1. modifier block/element(appearance, state)
+    2. letters, digits, dashes, underscore  for naming modifier
+    3. use dash for more then one word
+    4. syntax: block/element--modifier
+    -->
+
+
+
+
+    <div class="container">
+        <!-- card -->
+         <div class="card card--large">
+            <h2 class="card__title">Card Title</h2>
+            <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, odit!</p>
+            <button class="btn card__btn">Learn More</button>
+         </div>
+
+         <!-- feedback -->
+          <div class="feedback feedback--medium">
+            <h2 class="feedback__title">feedback</h2>
+            <p class="feedback__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem, reprehenderit.</p>
+            <button class="btn feedback__btn feedback__btn--large"> Learn MOre</button>
+          </div>
+    </div>
+
+
+    <ul class="list">
+        <li class="list__item">Item1</li>
+        <li class="list__item">
+            Item2
+            <img src="#" alt="#" class="list__img">
+        </li>
+        <li class="list__item">Item3</li>
+    </ul>
+</body>
+</html>
